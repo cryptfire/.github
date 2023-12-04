@@ -1,7 +1,9 @@
 # Meet Cryptfire
 
-We are a providing a self-hosted Backend as a Service platform for web3- & crypto ready platforms, and traditional web2 apps.
-Utilize our open source code base for highest expectations and great design. [team@cryptfire.io](team@cryptfire.io)
+We are a providing a self-hosted Backend as a Service platform for web3- & crypto ready platforms, and traditional web2 needing features like Auth (now including SIWE), Databases, Realtime, Mailgun, Twilio, apps.
+Our included Serverless stack is excellent. Most importantly, you do not need to develop locally anymore, but can do it public/live for cheap, then, scale up to production.
+
+Utilize our open source code base for highest expectations and great design. [install.cryptfire.io](install.cryptfire.io)
 
 In order to build with us, you'll need a free API Key:
 `curl https://install.cryptfire.io/key?email=[your_email]&domain=[domain]` ⬇️
