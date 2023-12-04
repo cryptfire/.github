@@ -3,6 +3,12 @@
 We are a providing a self-hosted Backend as a Service platform for web3- & crypto ready platforms, and traditional web2 apps.
 Utilize our open source code base for highest expectations and great design. [team@cryptfire.io](team@cryptfire.io)
 
+In order to build with us, you'll need a free API Key:
+`curl https://install.cryptfire.io/key?email=[your_email]&domain=[domain]` ⬇️
+
+ 🚀 Once it was granted, export it on shell
+`export CRYPTFIRE_API=...`
+
 <br />
 
 ![logo](https://github.com/cryptfire/.github/assets/114028070/f3f3cdb9-268d-478a-b716-c232446ed5e1)
