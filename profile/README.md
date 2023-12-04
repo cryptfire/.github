@@ -5,7 +5,7 @@ Features like Auth (now including SIWE), Databases, Realtime, Mailgun, Twilio, 2
 
 Utilize our open source code base for highest expectations and great design. [Github](https://github.com/cryptfire/cryptfire)
 
-## 🚀 Install
+## 🚀 Join
 
 In order to build with us, you'll need a free API Key:
 
