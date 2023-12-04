@@ -1,15 +1,18 @@
 # Meet Cryptfire
 
-We are a providing a self-hosted Backend as a Service platform for web3- & crypto ready platforms, and traditional web2 needing features like Auth (now including SIWE), Databases, Realtime, Mailgun, Twilio, apps.
-Our included Serverless stack is excellent. Most importantly, you do not need to develop locally anymore, but can do it public/live for cheap, then, scale up to production.
+We are a providing a self-hosted Backend as a Service platform for massively scaling web3- & crypto ready platforms, and traditional web2 apps needing features like Auth (now including SIWE), Databases, Realtime, Mailgun, Twilio, 2FA, etc. Our included Serverless stack is excellent. Most importantly, you do not need to develop locally anymore, but can do it public/live for cheap, then, scale up to production.
 
-Utilize our open source code base for highest expectations and great design. [install.cryptfire.io](install.cryptfire.io)
+Utilize our open source code base for highest expectations and great design. [Github](https://github.com/cryptfire/cryptfire)
 
 In order to build with us, you'll need a free API Key:
-`curl https://install.cryptfire.io/key?email=[your_email]&domain=[domain]` ⬇️
+`curl https://install.cryptfire.io/key/your@email.com` ⬇
+
+Or simply
+
+`curl https://install.cryptfire.io/ | sh` 
 
  🚀 Once it was granted, export it on shell
-`export CRYPTFIRE_API=...`
+`export CRYPTFIRE_API=...` ⬇️
 
 <br />
 
