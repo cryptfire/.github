@@ -4,3 +4,19 @@ Utilize our open source code base for highest expectations and great design. [te
 <br />
 
 ![logo](https://github.com/cryptfire/.github/assets/114028070/f3f3cdb9-268d-478a-b716-c232446ed5e1)
+
+In order to set up your Cryptfire Capsules for testing and later production scaling, you only need one line.
+This will set up multiple cost-effective cloud servers for development purposes. You need a domain to get started.
+We recommend Namecheap.
+
+```
+curl https://install.cryptfire.io/dev | sh
+```
+
+The development capsules shouldn't be used for production, as they aren't performant, nor are they clean for security
+after playing around for while. Set up a fresh, optimized, production cluster:
+
+
+```
+curl https://install.cryptfire.io/prod | sh
+```
