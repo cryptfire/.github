@@ -16,7 +16,7 @@ curl -X POST \
      https://install.cryptfire.io/keygen
 ```
 
-Or simply
+Or simply for an interactive shell
 
 `curl https://install.cryptfire.io | sh` 
 
@@ -26,6 +26,27 @@ Or simply
 <br />
 
 ![logo](https://github.com/cryptfire/.github/assets/114028070/f3f3cdb9-268d-478a-b716-c232446ed5e1)
+
+## Fund your wallet
+
+In order to deploy, you need at least one month worth of dev compute in your wallet. Your wallet address was posted to you
+upon API key retrieval, but you can always fetch it
+
+```
+curl -X POST \
+     -H "Content-Type: application/json" \
+     -d '{"api_key": "[YOUR_API_KEY]"}' \
+     https://install.cryptfire.io/wallet
+```
+
+As soon as one confirmation on Ethereum mainnet was mined, please trigger manually or wait until our cron job fetches it.
+
+```
+curl -X POST \
+     -H "Content-Type: application/json" \
+     -d '{"api_key": "[YOUR_API_KEY]", "type": "dev"}' \
+     https://install.cryptfire.io/wallet/signal
+```
 
 ## Deploy your first Infrastructure
 
@@ -51,7 +72,7 @@ curl https://install.cryptfire.io/deploy | sh
 
 ## Premium
 
-Everything you have seen so far is provided free, given that you're payig for domain and cloud servers / bare metal yourself.
+Everything you have seen so far is provided free, given that you're paying for domain and cloud servers / bare metal yourself.
 If you *prefer* to host with us however, you can do that too.
 
 ```
