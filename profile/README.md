@@ -9,7 +9,7 @@ Utilize our open source code base for highest expectations and great design. [Gi
 
 In order to build with us, you'll need a free API Key:
 
-`curl https://install.cryptfire.io/key/[your@email.com]` ⬇
+`curl -X POST -d "email=[YOUR_EMAIL] https://install.cryptfire.io/keygen` ⬇
 
 Or simply
 
