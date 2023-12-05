@@ -28,11 +28,6 @@ In order to set up your Cryptfire Capsules for testing and later production scal
 This will set up multiple cost-effective cloud servers for development purposes. You need a domain to get started.
 We recommend Namecheap.
 
-```
-this is currently not supported by us, you got to do it by hand :(
-we might plug into scaleway soon, they have an own domain registar and good api
-```
-
 The development capsules shouldn't be used for production, as they aren't performant, nor are they clean for security
 after playing around for while. Set up a fresh, optimized, production cluster:
 
