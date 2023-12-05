@@ -27,27 +27,6 @@ Or simply for an interactive shell
 
 ![logo](https://github.com/cryptfire/.github/assets/114028070/f3f3cdb9-268d-478a-b716-c232446ed5e1)
 
-## Fund your wallet
-
-In order to deploy, you need at least one month worth of dev compute in your wallet. Your wallet address was posted to you
-upon API key retrieval, but you can always fetch it
-
-```
-curl -X POST \
-     -H "Content-Type: application/json" \
-     -d '{"api_key": "[YOUR_API_KEY]"}' \
-     https://install.cryptfire.io/wallet
-```
-
-As soon as one confirmation on Ethereum mainnet was mined, please trigger manually or wait until our cron job fetches it.
-
-```
-curl -X POST \
-     -H "Content-Type: application/json" \
-     -d '{"api_key": "[YOUR_API_KEY]", "type": "dev"}' \
-     https://install.cryptfire.io/wallet/signal
-```
-
 ## Deploy your first Infrastructure
 
 In order to set up your Cryptfire Capsules for testing and later production scaling, you only need one line.
@@ -87,6 +66,27 @@ curl -X POST \
      -H "Content-Type: application/json" \
      -d '{"api_key": "[YOUR_API_KEY]", "code": "[CONFIRM_CODE]"}' \
      https://install.cryptfire.io/premium/verify
+```
+
+### Fund your wallet
+
+In order to deploy, you need at least one month worth of dev compute in your wallet. Your wallet address was posted to you
+upon API key retrieval, but you can always fetch it
+
+```
+curl -X POST \
+     -H "Content-Type: application/json" \
+     -d '{"api_key": "[YOUR_API_KEY]"}' \
+     https://install.cryptfire.io/wallet
+```
+
+As soon as one confirmation on Ethereum mainnet was mined, please trigger manually or wait until our cron job fetches it.
+
+```
+curl -X POST \
+     -H "Content-Type: application/json" \
+     -d '{"api_key": "[YOUR_API_KEY]", "type": "dev"}' \
+     https://install.cryptfire.io/wallet/signal
 ```
 
 ## Maintainers
