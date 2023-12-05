@@ -9,7 +9,12 @@ Utilize our open source code base for highest expectations and great design. [Gi
 
 In order to build with us, you'll need a free API Key:
 
-`curl -X POST -d "email=[YOUR_EMAIL] https://install.cryptfire.io/keygen` ⬇
+```
+curl -X POST \
+     -H "Content-Type: application/json" \
+     -d '{"email": "[YOUR_EMAIL]"}' \
+     https://install.cryptfire.io/keygen
+```
 
 Or simply
 
@@ -31,9 +36,11 @@ We recommend Namecheap.
 The development capsules shouldn't be used for production, as they aren't performant, nor are they clean for security
 after playing around for while. Set up a fresh, optimized, production cluster:
 
-
 ```
-curl -X POST -d "api_key=[YOUR_API_KEY]&type=dev" https://install.cryptfire.io/deploy/compute
+curl -X POST \
+     -H "Content-Type: application/json" \
+     -d '{"api_key": "[YOUR_API_KEY]", "type": "dev"}' \
+     https://install.cryptfire.io/deploy/compute
 ```
 
 Or simply for an interactive shell
@@ -48,8 +55,17 @@ Everything you have seen so far is provided free, given that you're payig for do
 If you *prefer* to host with us however, you can do that too.
 
 ```
-curl -X POST -d "api_key=[YOUR_API_KEY]"  https://install.cryptfire.io/premium/upgrade;
-curl -X POST -d "api_key=[YOUR_API_KEY]"  https://install.cryptfire.io/premium/verify;
+curl -X POST \
+     -H "Content-Type: application/json" \
+     -d '{"api_key": "[YOUR_API_KEY]"}' \
+     https://install.cryptfire.io/premium/upgrade
+
+# wait for email
+
+curl -X POST \
+     -H "Content-Type: application/json" \
+     -d '{"api_key": "[YOUR_API_KEY]", "code": "[CONFIRM_CODE]"}' \
+     https://install.cryptfire.io/premium/verify
 ```
 
 ## Maintainers
