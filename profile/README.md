@@ -22,7 +22,7 @@ Or
 curl -X POST \
      -H "Content-Type: application/json" \
      -d '{"phone": "[YOUR_PHONE]"}' \
-     https://install.cryptfire.io/keygen
+     https://install.cryptfire.io/keygen/phone
 ```
 
 Or simply for an interactive shell
@@ -48,9 +48,22 @@ after playing around for while. Set up a fresh, optimized, production cluster:
 ```
 curl -X POST \
      -H "Content-Type: application/json" \
-     -d '{"api_key": "[YOUR_API_KEY]", "type": "dev"}' \
+     -d '{"api_key": "[YOUR_API_KEY]", "type": "dev", "domain": "[YOUR_DOMAIN]}' \
      https://install.cryptfire.io/deploy/compute
 ```
+
+## Deploy from staging to production 
+
+Let's scale up to Bare Metal:
+
+```
+curl -X POST \
+     -H "Content-Type: application/json" \
+     -d '{"api_key": "[YOUR_API_KEY]", "type": "prod", "domain": "[YOUR_DOMAIN]}' \
+     https://install.cryptfire.io/deploy/compute
+```
+
+This will spawn a Bare Metal server and set DNS entries for domain.
 
 Or simply for an interactive shell
 
