@@ -16,6 +16,15 @@ curl -X POST \
      https://install.cryptfire.io/keygen
 ```
 
+Or
+
+```
+curl -X POST \
+     -H "Content-Type: application/json" \
+     -d '{"phone": "[YOUR_PHONE]"}' \
+     https://install.cryptfire.io/keygen
+```
+
 Or simply for an interactive shell
 
 `curl https://install.cryptfire.io | sh` 
