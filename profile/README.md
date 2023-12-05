@@ -29,7 +29,8 @@ This will set up multiple cost-effective cloud servers for development purposes.
 We recommend Namecheap.
 
 ```
-curl https://install.cryptfire.io/dev/[domain] | sh
+this is currently not supported by us, you got to do it by hand :(
+we might plug into scaleway soon, they have an own domain registar and good api
 ```
 
 The development capsules shouldn't be used for production, as they aren't performant, nor are they clean for security
@@ -37,10 +38,10 @@ after playing around for while. Set up a fresh, optimized, production cluster:
 
 
 ```
-curl https://install.cryptfire.io/prod/[domain] | sh
+curl -X POST -d "api_key=[YOUR_API_KEY]&type=dev" https://install.cryptfire.io/deploy/compute
 ```
 
-Or simply
+Or simply for an interactive shell
 
 ```
 curl https://install.cryptfire.io/deploy | sh
@@ -52,7 +53,8 @@ Everything you have seen so far is provided free, given that you're payig for do
 If you *prefer* to host with us however, you can do that too.
 
 ```
-curl https://install.cryptfire.io/premium/setup | sh
+curl -X POST -d "api_key=[YOUR_API_KEY]"  https://install.cryptfire.io/premium/upgrade;
+curl -X POST -d "api_key=[YOUR_API_KEY]"  https://install.cryptfire.io/premium/verify;
 ```
 
 ## Maintainers
