@@ -10,15 +10,20 @@ Our Serverless stack should be Knative by Google. Most importantly, there is no 
 
 ❗ [Commerical API](https://github.com/cryptfire/.github/wiki/Commerical-API) currently under active developmemt. 
 
+## 🚀 Install CLI
+
+```
+npm install @cryptfire/cli -g
+cryptfire --health;
+```
+
 ## 🚀 Join
 
 In order to build with us, you'll need a free API Key:
 
 ```
-curl -X POST \
-     -H "Content-Type: application/json" \
-     -d '{"email": "[YOUR_EMAIL]"}' \
-     https://api.cryptfire.io/keygen
+cryptfire --register --email your@email.com;
+cryptfire --confirm;
 ```
 
 Or
