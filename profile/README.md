@@ -4,9 +4,11 @@ We are a providing the self-hosted infrastructure and enrich the code base of su
 Our goal is to provide web3- & crypto readyness, and serve the needs of traditional web2 apps too.  Features like Auth (now including SIWE), Databases, Realtime, Mailgun, Twilio, 2FA, etc. should be included. 
 Our Serverless should be Knative by Google. Most importantly, there is no need to develop locally anymore, but can do it public/live for cheap, then, scale up to production. __You have root access to your infrastructure at all teams__
 
+See Wiki for Pricing.
+
 ✅ Utilize our open source code base for highest expectations and great design. [Github](https://github.com/cryptfire/cryptfire)
 
-❗ API currently down. 
+❗ Commerical API currently down. 
 
 ## 🚀 Join
 
