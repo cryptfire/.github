@@ -2,7 +2,7 @@
 
 We are a providing the self-hosted infrastructure and enrich the code base of superior self-hosted Backend as a Service platforms you need to develop applications and entire platforms faster.
 Our goal is to provide web3- & crypto readyness, and serve the needs of traditional web2 apps too.  Features like Auth (now including SIWE), Databases, Realtime, Mailgun, Twilio, 2FA, etc. should be included. 
-Our Serverless should be Knative by Google. Most importantly, there is no need to develop locally anymore, but can do it public/live for cheap, then, scale up to production. __You have root access to your infrastructure at all teams__
+Our Serverless stack should be Knative by Google. Most importantly, there is no need to develop locally anymore, but can do it public/live for cheap, then, scale up to production. __You have root access to your infrastructure at all teams__
 
 💵 See [Wiki](https://github.com/cryptfire/.github/wiki/Cryptfire-Pricing) for Pricing. 
 
