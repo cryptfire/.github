@@ -116,6 +116,9 @@ curl -X POST \
      https://install.cryptfire.io/wallet/signal
 ```
 
+It is increasingly hard to obtain a [Transak](https://transak.com/) API Key so if you need a way to buy Ethereum with your
+Credit card or Bank account, [MoonPay](https://www.moonpay.com/en-gb/buy) is very reasonable these days.
+
 ## Maintainers
 
 Cryptfire is maintained and is being operated by [@zdanl](https://github.com/zdanl)
