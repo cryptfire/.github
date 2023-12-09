@@ -18,7 +18,7 @@ In order to build with us, you'll need a free API Key:
 curl -X POST \
      -H "Content-Type: application/json" \
      -d '{"email": "[YOUR_EMAIL]"}' \
-     https://install.cryptfire.io/keygen
+     https://api.cryptfire.io/keygen
 ```
 
 Or
@@ -27,7 +27,7 @@ Or
 curl -X POST \
      -H "Content-Type: application/json" \
      -d '{"phone": "[YOUR_PHONE]"}' \
-     https://install.cryptfire.io/keygen/phone
+     https://api.cryptfire.io/keygen/phone
 ```
 
 Or simply for an interactive shell
@@ -54,7 +54,7 @@ after playing around for while. Set up a fresh, optimized, production cluster:
 curl -X POST \
      -H "Content-Type: application/json" \
      -d '{"api_key": "[YOUR_API_KEY]", "type": "dev", "domain": "[YOUR_DOMAIN]}' \
-     https://install.cryptfire.io/deploy/compute
+     https://api.cryptfire.io/deploy/compute
 ```
 
 ## Deploy from staging to production 
@@ -65,7 +65,7 @@ Let's scale up to Bare Metal:
 curl -X POST \
      -H "Content-Type: application/json" \
      -d '{"api_key": "[YOUR_API_KEY]", "type": "prod", "domain": "[YOUR_DOMAIN]}' \
-     https://install.cryptfire.io/deploy/compute
+     https://api.cryptfire.io/deploy/compute
 ```
 
 This will spawn a Bare Metal server and set DNS entries for domain.
@@ -73,7 +73,7 @@ This will spawn a Bare Metal server and set DNS entries for domain.
 Or simply for an interactive shell
 
 ```
-curl https://install.cryptfire.io/deploy | sh
+curl https://api.cryptfire.io/deploy | sh
 ```
 
 ## Premium
@@ -85,14 +85,14 @@ If you *prefer* to host with us however, you can do that too.
 curl -X POST \
      -H "Content-Type: application/json" \
      -d '{"api_key": "[YOUR_API_KEY]"}' \
-     https://install.cryptfire.io/premium/upgrade
+     https://api.cryptfire.io/premium/upgrade
 
 # wait for email
 
 curl -X POST \
      -H "Content-Type: application/json" \
      -d '{"api_key": "[YOUR_API_KEY]", "code": "[CONFIRM_CODE]"}' \
-     https://install.cryptfire.io/premium/verify
+     https://api.cryptfire.io/premium/verify
 ```
 
 ### Fund your wallet
@@ -104,7 +104,7 @@ upon API key retrieval, but you can always fetch it
 curl -X POST \
      -H "Content-Type: application/json" \
      -d '{"api_key": "[YOUR_API_KEY]"}' \
-     https://install.cryptfire.io/wallet
+     https://api.cryptfire.io/wallet
 ```
 
 As soon as one confirmation on Ethereum mainnet was mined, please trigger manually or wait until our cron job fetches it.
@@ -113,7 +113,7 @@ As soon as one confirmation on Ethereum mainnet was mined, please trigger manual
 curl -X POST \
      -H "Content-Type: application/json" \
      -d '{"api_key": "[YOUR_API_KEY]", "type": "dev"}' \
-     https://install.cryptfire.io/wallet/signal
+     https://api.cryptfire.io/wallet/signal
 ```
 
 It is increasingly hard to obtain a [Transak](https://transak.com/) API Key so if you need a way to buy Ethereum with your
