@@ -8,7 +8,7 @@ Our Serverless stack should be Knative by Google. Most importantly, there is no 
 
 ✅ Utilize our open source code base for highest expectations and great design. [Github](https://github.com/cryptfire/cryptfire)
 
-❗ Commerical API currently down. 
+❗ [Commerical API](https://github.com/cryptfire/.github/wiki/Commerical-API) currently down. 
 
 ## 🚀 Join
 
