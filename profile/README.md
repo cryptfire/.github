@@ -1,6 +1,6 @@
 # Meet Cryptfire
 
-We are providing a Transak-driven CEX and Swap for Bitcoin, Ethereum, Lyra and Utopia and run a Blockchain network executing WASM compiled smart contracts as well as Serverless functions and Linux VMs.
+We are providing a Transak-driven CEX and Swap for Bitcoin, Ethereum, Lyra and Utopia. We run a Blockchain network executing WASM compiled smart contracts as well as Serverless functions and JSLinux Virtual Machines.
 
 💵 See [Wiki](https://github.com/cryptfire/.github/wiki/Cryptfire-Pricing) for Pricing. 
 
